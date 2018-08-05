@@ -1,0 +1,10 @@
+<resources>
+    <string name="UserName">User Name</string>
+    <string name="Password">Password</string>
+    <string name="LogIN">Log IN</string>
+    <string name="SignUp">Sign UP</string>
+    <string name="BoxPrezzy">Box Prezzy</string>
+    <string name="app_name">authentication</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="Register">Register</string>
+</resources>

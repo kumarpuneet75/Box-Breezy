@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/RelativeLayout">
+    <ImageView
+        android:id="@+id/BackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft= "16dp"
+        android:paddingRight = "16dp"
+        android:paddingTop = "16dp"
+        android:paddingBottom = "16dp">
+
+        <TextView
+            android:id="@+id/BoxPrezzy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aguafina_script"
+            android:text="@string/BoxPrezzy"
+            android:textColor="#fce4ec"
+            android:textSize="56dp"
+            android:layout_centerHorizontal="true"/>
+    <EditText
+        android:background="@drawable/edit_text_layout"
+        android:layout_below="@+id/BoxPrezzy"
+        android:id="@+id/UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/UserName"
+        android:inputType="text"
+        android:padding="8dp" />
+    <EditText
+        android:background="@drawable/edit_text_layout"
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Password"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:layout_below="@id/UserName"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Password"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:background="@drawable/button_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:text="@string/LogIN" />
+
+        <Button
+            android:id="@+id/SignUPButton"
+            android:background="@drawable/button_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:text="@string/SignUp" />
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
